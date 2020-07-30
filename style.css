@@ -1,0 +1,389 @@
+:root {
+  --primary-color: #17a2b8;
+  --dark-color: #343a40;
+  --light-color: #f4f4f4;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+/* text styles */
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  border-bottom: solid 1px white;
+  opacity: 0.9;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 0.45rem;
+  margin: 0 0.25rem;
+}
+
+.navbar a:hover {
+  color: var(--primary-color);
+}
+
+.navbar .welcome span {
+  margin-right: 0.6rem;
+}
+
+.bg-dark {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+#icon {
+  padding-right: 10px;
+}
+
+.landing {
+  position: relative;
+  background: url("./assets/imgs/slid.jpg") no-repeat center center/cover;
+  height: 100vh;
+}
+
+.learn {
+  position: relative;
+  background: white;
+  height: 100vh;
+}
+
+.dark-overlay {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.dark-overlay2 {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.landing-inner {
+  color: #fff;
+  height: auto;
+  width: 80%;
+  margin-left: 120px;
+  padding-top: 250px;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.landing-inner2 {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  margin: auto 10% auto 10%;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--light-color);
+  color: #333;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: #fff;
+  margin-top: 20px;
+  border: none;
+}
+
+.btn-menu {
+  background: none;
+  color: white;
+  margin-top: 20px;
+  border-bottom: 2px solid white;
+}
+
+.btn-menu:hover {
+  opacity: 0.6;
+}
+
+/* mobile styles */
+
+.x-large {
+  font-size: 3rem;
+}
+
+.x-large2 {
+  font-size: 3rem;
+  color: black;
+}
+
+.lead {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.menu {
+  display: flex;
+  margin-top: 80px;
+  justify-content: flex-end;
+  margin-right: 90px;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 10px;
+  height: 100vh; /* Should be removed. Only for demonstration */
+}
+
+.container {
+  margin: auto;
+}
+
+.col-1 {
+  background-color: none;
+}
+
+.col-2 {
+  background: url("./assets/imgs/learn2.jpg") no-repeat center center/cover;
+}
+
+.col-3 {
+  background-color: lightgrey;
+}
+
+.col-4 {
+  display: flex;
+  background: url("./assets/imgs/pattern6.jpg") no-repeat center center/cover;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.col-5 {
+  background: lightgray;
+}
+
+.col-6 {
+  background: url("./assets/imgs/cash.jpg") no-repeat center center/cover;
+}
+
+.col-7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  transition: opacity 0.2s ease-in;
+}
+
+.col-8 {
+  background: grey;
+}
+
+.learn-header {
+  display: flex;
+  height: auto;
+  text-align: justify;
+  font-size: 20px;
+  margin: 110px 5% auto 5%;
+}
+
+.bullets {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  text-align: justify;
+  font-size: 15px;
+  margin: 40px 5% auto 5%;
+  padding-bottom: 30px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.fa-search-dollar {
+  font-size: 40px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+.fa-chart-line {
+  font-size: 40px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+.fa-user-tie {
+  font-size: 40px;
+  padding-right: 23px;
+  padding-top: 10px;
+}
+
+.fa-wine-glass-alt {
+  font-size: 40px;
+  padding-right: 30px;
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+.bull {
+  display: flex;
+}
+
+.circleBase {
+  border-radius: 50%;
+  behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+}
+
+.type1 {
+  display: flex;
+  width: 450px;
+  height: 450px;
+  background: url("./assets/imgs/man.jpg") no-repeat center center/cover;
+  border: 2px solid black;
+}
+
+.title {
+  color: lightgray;
+  font-size: 20px;
+  padding-top: 40px;
+}
+
+.quote-div {
+  padding: 0 1em;
+  margin-top: 100px;
+}
+
+.quote-p {
+  font-size: 20px;
+  text-align: justify;
+  padding: 0 60px 0 60px;
+  color: black;
+}
+
+.sign {
+  padding-left: 70px;
+  padding-top: 35px;
+}
+
+.pricing-background {
+  position: relative;
+  background: lightgray;
+  height: 100vh;
+}
+
+.form-container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400, 700);
+
+form {
+  max-width: 420px;
+  margin: 50px auto;
+}
+
+.feedback-input {
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #cc6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid #cc4949;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: #cc6666;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+[type="submit"]:hover {
+  background: #cc4949;
+}
