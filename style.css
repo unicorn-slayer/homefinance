@@ -218,7 +218,7 @@ ul {
 }
 
 .col-5 {
-  background: lightgray;
+  background: gray;
 }
 
 .col-6 {
@@ -314,12 +314,13 @@ ul {
   font-size: 20px;
   text-align: justify;
   padding: 0 60px 0 60px;
-  color: black;
+  color: white;
 }
 
 .sign {
   padding-left: 70px;
   padding-top: 35px;
+  color: white;
 }
 
 .pricing-background {
@@ -330,9 +331,10 @@ ul {
 
 .form-container {
   display: flex;
-  height: 100vh;
+  height: 90vh;
   align-items: center;
   justify-content: center;
+  padding-top: 100px;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400, 700);
@@ -386,4 +388,22 @@ textarea {
 }
 [type="submit"]:hover {
   background: #cc4949;
+}
+
+.spam {
+  margin-bottom: 15px;
+}
+
+.contact-container {
+  margin-top: 100px;
+  padding: 0 40px 0 40px;
+  text-align: justify;
+  color: white;
+}
+
+.phone {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 30px;
+  word-spacing: 1rem;
 }

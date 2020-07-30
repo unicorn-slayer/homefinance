@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css?family=Raleway"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>Appointment</title>
   </head>
   <body>
     <nav class="navbar bg-dark">
@@ -29,9 +29,6 @@
       </ul>
     </nav>
     <div class="row">
-      <div class="column col-8">
-        Hello
-      </div>
       <div class="column">
         <div class="form-container">
           <form action="POST" data-netlify="true">
@@ -67,10 +64,37 @@
               placeholder="Comment"
             ></textarea>
             <div class="field">
-              <div data-netlify-recaptcha="true"></div>
+              <div data-netlify-recaptcha="true" class="spam"></div>
             </div>
             <input type="submit" value="SUBMIT" />
           </form>
+        </div>
+      </div>
+      <div class="column col-8">
+        <div class="menu">
+          <div class="buttons">
+            <a href="about" class="btn btn-menu">About</a>
+          </div>
+          <div class="buttons">
+            <a href="learn" class="btn btn-menu">Learn More</a>
+          </div>
+          <div class="buttons">
+            <a href="contact" class="btn btn-menu">Book an Appointment</a>
+          </div>
+          <div class="buttons">
+            <a href="pricing" class="btn btn-menu">Pricing</a>
+          </div>
+        </div>
+        <div class="contact-container">
+          <p>
+            To book an appointment, please send us an email using the form on
+            the left hand side. We are able to meet in person, or online. Please
+            note, we can't guarantee your preferred time, but we will try and do
+            our best! If you would like to ring us instead, please use the phone
+            number below.
+          </p>
+
+          <p class="phone"><i class="fas fa-mobile-alt"></i> 07111111111</p>
         </div>
       </div>
     </div>
